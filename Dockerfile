@@ -6,3 +6,5 @@ ENV MYSQL_USER=admin
 ENV MYSQL_PASSWORD=admin
 
 EXPOSE 3306
+
+CMD ["sh", "-c", "mysqld & while true; do echo 'OK'; sleep 60; done"]
